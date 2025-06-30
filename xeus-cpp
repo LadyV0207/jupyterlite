@@ -1,0 +1,8 @@
+#build xeus-cpp
+micromamba create -f environment-dev.yml
+micromamba activate xeus-cpp
+micromamba install jupyterlab -c conda-forge
+
+#same emsdk as dependencies
+micromamba create -f environment-wasm-build.yml -y
+micromamba activate xeus-cpp-wasm-build
